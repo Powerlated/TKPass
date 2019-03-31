@@ -6,6 +6,7 @@
 .App {
   text-align: center;
   background-color: #1c0e4e;
+
 }
 
 .App-logo {
@@ -31,7 +32,11 @@
 		-1px -1px 0 rgb(34, 34, 34),
 		1px -1px 0 rgb(34, 34, 34),
 		-1px 1px 0 rgb(34, 34, 34),
-		1px 1px 0 rgb(34, 34, 34);
+    1px 1px 0 rgb(34, 34, 34); 
+}
+
+.App-header p {
+  width: 50%;
 }
 
 .App-link {

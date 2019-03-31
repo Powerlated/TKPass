@@ -20,7 +20,14 @@ let tabs = (
         <h1>TEAM KILL PASS TRACKER</h1>
         <p>
           The beginnings of an EPIC Rainbow Six Siege (and other multiplayer game) Team Kill Pass system.
-          </p>
+        </p>
+
+        <h2>Why did I make this?</h2>
+        <p>To be completely <s>hecking</s> honest, I do not know.</p>
+        <p>Actually, to be realer than real, I made this system because I was instpired by a guy named yeboizaidey 
+          on Discord to do so. He sorta started a TK Pass "honor system" that just grew into a giant meme. 
+          Zaidey also treid to convince me that making this website was all a big waste of time, but I did not listen
+          because I am always up for a challenge.</p>
         <a
           className="App-link"
           href="https://reactjs.org"
