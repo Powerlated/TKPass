@@ -9,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            The beginnings of an EPIC Rainbow Six Siege (and other multiplayer game) Team Kill Pass system.
           </p>
           <a
             className="App-link"
