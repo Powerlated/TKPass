@@ -5,6 +5,8 @@ import './App.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "./react-tabs.css";
 
+import Button from '@material-ui/core/Button';
+
 let tabs = (
   <Tabs className="Everything">
     <TabList>
@@ -12,11 +14,12 @@ let tabs = (
       <Tab>Members</Tab>
       <Tab>Staff</Tab>
       <Tab>Leaderboard</Tab>
+      <Tab>Requests</Tab>
     </TabList>
 
     <TabPanel>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt=""/>
+        <img src={logo} className="App-logo" alt="" />
         <h1>TEAM KILL PASS TRACKER</h1>
         <p>
           The beginnings of an EPIC Rainbow Six Siege (and other multiplayer game) Team Kill Pass system.
@@ -24,8 +27,8 @@ let tabs = (
 
         <h2>Why did I make this?</h2>
         <p>To be completely <s>hecking</s> honest, I do not know.</p>
-        <p>Actually, to be realer than real, I made this system because I was instpired by a guy named yeboizaidey 
-          on Discord to do so. He sorta started a TK Pass "honor system" that just grew into a giant meme. 
+        <p>Actually, to be realer than real, I made this system because I was instpired by a guy named yeboizaidey
+          on Discord to do so. He sorta started a TK Pass "honor system" that just grew into a giant meme.
           Zaidey also triedd to convince me that making this website was all a big waste of time, but I did not listen
           because I am always up for a challenge.</p>
         <a
@@ -40,6 +43,15 @@ let tabs = (
     </TabPanel>
     <TabPanel>
       <h2>Any content 2</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Any content 2</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Any content 2</h2>
+    </TabPanel>
+    <TabPanel>
+      <Button variant="contained" color="primary">Material</Button>
     </TabPanel>
   </Tabs>
 );
