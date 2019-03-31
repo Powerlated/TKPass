@@ -8,26 +8,28 @@ import "./react-tabs.css";
 let tabs = (
   <Tabs className="Everything">
     <TabList>
-      <Tab>Home</Tab>
-      <Tab>Title 2</Tab>
+      <Tab>R6S TK PASS</Tab>
+      <Tab>Members</Tab>
+      <Tab>Staff</Tab>
+      <Tab>Leaderboard</Tab>
     </TabList>
 
     <TabPanel>
       <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <h1>TEAM KILL PASS TRACKER</h1>
-          <p>
-            The beginnings of an EPIC Rainbow Six Siege (and other multiplayer game) Team Kill Pass system.
+        <img src={logo} className="App-logo" alt=""/>
+        <h1>TEAM KILL PASS TRACKER</h1>
+        <p>
+          The beginnings of an EPIC Rainbow Six Siege (and other multiplayer game) Team Kill Pass system.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
           </a>
-        </header>
+      </header>
     </TabPanel>
     <TabPanel>
       <h2>Any content 2</h2>
@@ -41,7 +43,7 @@ class App extends Component {
 
       <div className="App">
         {tabs}
-        
+
       </div>
     );
   }
