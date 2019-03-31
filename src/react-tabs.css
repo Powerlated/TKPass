@@ -27,6 +27,8 @@
 .react-tabs__tab--selected {
   background: rgb(7, 77, 168);
   color: rgb(255, 255, 255);
+  border-left: 1px solid rgb(6, 62, 134);
+  border-right: 1px solid rgb(6, 62, 134);
 }
 
 .react-tabs__tab--disabled {
@@ -42,9 +44,9 @@
   z-index: 2;
 }
 
-.react-tabs__tab--selected#react-tabs-0 {
-  /* background: rgb(189, 0, 0); */
-}
+/* .react-tabs__tab--selected#react-tabs-0 {
+  background: rgb(189, 0, 0);
+} */
 
 
 .react-tabs__tab-panel {
