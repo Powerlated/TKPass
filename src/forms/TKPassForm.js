@@ -3,6 +3,9 @@ import Component from "mson-react/lib/component";
 
 import "./forms.css";
 
+import "../util/AlertDialog.js";
+import AlertDialog from "../util/AlertDialog";
+
 const definition = {
   component: "Form",
   fields: [
@@ -15,7 +18,8 @@ const definition = {
     {
       name: "heading",
       component: "Text",
-      text: "## Describe in detail why you believe you deserve a Team Kill Pass."
+      text:
+        "## Describe in detail why you believe you deserve a Team Kill Pass."
     },
     {
       name: "reason",
@@ -38,7 +42,12 @@ const definition = {
   ]
 };
 
+let alert;
+
 class TKPassForm extends React.Component {
+  state = {
+    submitted: false
+  }
   render() {
     return (
       <div className="form-outside">
@@ -47,9 +56,11 @@ class TKPassForm extends React.Component {
           <Component
             definition={definition}
             onSubmit={({ component }) => {
-              alert(JSON.stringify(component.getValues()));
+              alert = <AlertDialog />;
+              this.forceUpdate();
             }}
           />
+          {alert}
         </div>
       </div>
     );
