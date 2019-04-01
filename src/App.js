@@ -8,9 +8,7 @@ import "./react-tabs.css";
 import Leaderboard from "./leaderboard/Leaderboard";
 import "./leaderboard/Leaderboard.css";
 
-import { Form, Field } from "react-final-form";
-
-import TKPassForm from "./TKPassForm";
+import TKPassForm from "./TKPassForm/TKPassForm.js";
 
 class App extends Component {
   render() {
