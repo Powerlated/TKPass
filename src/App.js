@@ -8,25 +8,12 @@ import "./react-tabs.css";
 import Leaderboard from "./leaderboard/Leaderboard";
 import "./leaderboard/Leaderboard.css";
 
-import { Form, Text } from 'informed';
+import { Form, Field } from "react-final-form";
 
+import TKPassForm from "./TKPassForm";
 
 class App extends Component {
   render() {
-    let leaderboard = <Leaderboard />;
-
-    const leaderboardTab = (
-      <TabPanel
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center"
-        }}
-      >
-        {leaderboard}
-      </TabPanel>
-    );
-
     return (
       <div className="App">
         <Tabs className="Everything">
@@ -78,9 +65,19 @@ class App extends Component {
             <h2>Any content 2</h2>
           </TabPanel>
 
-          {leaderboardTab}
+          <TabPanel
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            <Leaderboard />
+          </TabPanel>
 
-          <TabPanel>REQUESTS</TabPanel>
+          <TabPanel>
+            <TKPassForm />
+          </TabPanel>
         </Tabs>
         <p style={{ color: "gray" }}>
           This website is completely unrelated and unaffiliated with Rainbow
