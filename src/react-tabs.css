@@ -8,6 +8,8 @@
   margin: 0 0 20px;
   padding: 0;
   background: rgb(12, 36, 66);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  
 }
 
 .react-tabs__tab {
@@ -18,17 +20,21 @@
 
   position: relative;
   list-style: none;
-  padding: 12px 120px;
+  min-width: 240px;
+  min-height: 20px;
   cursor: pointer;
   color: rgb(109, 109, 109);
   
+  vertical-align: middle;
 }
 
 .react-tabs__tab--selected {
   background: rgb(7, 77, 168);
   color: rgb(255, 255, 255);
-  border-left: 1px solid rgb(6, 62, 134);
-  border-right: 1px solid rgb(6, 62, 134);
+  /* border-left: 1px solid rgb(6, 62, 134);
+  border-right: 1px solid rgb(6, 62, 134); */
+
+  box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
 
 .react-tabs__tab--disabled {
@@ -38,10 +44,14 @@
 .react-tabs__tab#react-tabs-0 {
   /* background: rgb(139, 0, 0); */
   background: rgb(189, 0, 0);
-  display: flex;
-  padding: 0px 80px;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.50);
+  /* display: flex; */
+  padding: 0px 0px;
   z-index: 2;
+
+  justify-content: center;
+  align-items: center;
+
+  max-width: 100%;
 }
 
 /* .react-tabs__tab--selected#react-tabs-0 {
