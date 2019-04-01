@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "informed": "^2.2.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.6",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
     "react-table": "^6.9.2",
@@ -27,6 +30,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "prettier": "1.16.4"
+    "node-sass": "4.11.0",
+    "prettier": "1.16.4",
+    "sass-convert": "^0.5.2"
   }
 }
