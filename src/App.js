@@ -64,7 +64,7 @@ class App extends Component {
                 Actually, to be realer than real, I made this system because I
                 was instpired by a guy named yeboizaidey on Discord to do so. He
                 sorta started a TK Pass "honor system" that just grew into a
-                giant meme. Zaidey also triedd to convince me that making this
+                giant meme. Zaidey also tried to convince me that making this
                 website was all a big waste of time, but I did not listen
                 because I am always up for a challenge.
               </p>
