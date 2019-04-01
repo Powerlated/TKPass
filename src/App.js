@@ -8,7 +8,8 @@ import "./react-tabs.css";
 import Leaderboard from "./leaderboard/Leaderboard";
 import "./leaderboard/Leaderboard.css";
 
-import TKPassForm from "./TKPassForm/TKPassForm.js";
+import TKPassForm from "./forms/TKPassForm.js";
+import SupportTicketForm from "./forms/SupportTicketForm.js";
 
 class App extends Component {
   render() {
@@ -62,7 +63,6 @@ class App extends Component {
           <TabPanel>
             <h2>Any content 2</h2>
           </TabPanel>
-
           <TabPanel
             style={{
               display: "flex",
@@ -72,9 +72,15 @@ class App extends Component {
           >
             <Leaderboard />
           </TabPanel>
-
-          <TabPanel>
+          <TabPanel
+            style={{
+              display: "flex",
+              justifyContent: "space-evenly",
+              flexFlow: "row wrap"
+            }}
+          >
             <TKPassForm />
+            <SupportTicketForm />
           </TabPanel>
         </Tabs>
         <p style={{ color: "gray" }}>

@@ -1,26 +1,32 @@
 import React from "react";
 import Component from "mson-react/lib/component";
 
-import "./TKPassForm.css";
+import "./forms.css";
 
 const definition = {
   component: "Form",
   fields: [
     {
-      name: "fullName",
-      component: "PersonFullNameField",
+      name: "name",
+      label: "In game name",
+      component: "TextField",
       required: true
     },
     {
-      name: "birthday",
-      component: "DateField",
-      label: "Birthday",
+      name: "heading",
+      component: "Text",
+      text: "## Describe in detail why you believe you deserve a Team Kill Pass."
+    },
+    {
+      name: "reason",
+      component: "TextField",
+      label: "Why?",
       required: true
     },
     {
-      name: "phone",
-      component: "PhoneField",
-      label: "Phone"
+      name: "email",
+      component: "EmailField",
+      label: "Email"
     },
     {
       name: "submit",
@@ -35,8 +41,8 @@ const definition = {
 class TKPassForm extends React.Component {
   render() {
     return (
-      <div className="tkpassform-outside">
-        <div className="tkpassform-container">
+      <div className="form-outside">
+        <div className="form-container">
           <h1>TK Pass Application Form</h1>
           <Component
             definition={definition}
