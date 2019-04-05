@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <md-tabs>
-      <md-tab>
-        <img alt="R6S Logo" id="logo" src="./assets/r6_logo.png">
+    <b-tabs id="tabline">
+      <b-tab title="Home">
         <HomePage/>
-      </md-tab>
-    </md-tabs>
+        <Footer/>
+      </b-tab>
+    </b-tabs>
   </div>
 </template>
 
@@ -20,18 +20,33 @@ Vue.use(MdTabs);
 
 import HomePage from "./components/HomePage.vue";
 
+import Footer from "./components/Footer.vue";
+
+import BootstrapVue from "bootstrap-vue";
+
+Vue.use(BootstrapVue);
+
 export default {
   name: "app",
   components: {
-    HomePage
+    HomePage,
+    Footer
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+// @import "node_modules/bootstrap/scss/bootstrap";
+// @import "node_modules/bootstrap-vue/src/index.scss";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+</style>
+
+<style lang="scss">
 body {
   background-color: #1c0e4e;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 #app {
@@ -41,7 +56,6 @@ body {
   text-align: center;
   color: #2c3e50;
 
-  min-height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
   border-bottom: black;
 
@@ -49,17 +63,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
   color: pink;
   text-shadow: -1px -1px 0 rgb(34, 34, 34), 1px -1px 0 rgb(34, 34, 34),
     -1px 1px 0 rgb(34, 34, 34), 1px 1px 0 rgb(34, 34, 34);
-}
 
-#app p {
-  width: 800px;
-  text-align: left;
-  max-width: 95%;
-  margin-bottom: 40px;
+  width: 100%;
 }
 
 #app h1,
@@ -72,27 +81,7 @@ body {
   text-align: left;
 }
 
-#logo {
-  animation: App-logo-spin infinite 0.02s linear,
-    App-logo-fx infinite 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  max-width: 100%;
-
-  pointer-events: none;
-  filter: invert(100%) drop-shadow(1px 0px 0 red) drop-shadow(-1px 0px 0 red)
-    drop-shadow(0px 1px 0 red) drop-shadow(0px -1px 0 red);
-}
-
-@keyframes App-logo-spin {
-  0% {
-    transform: rotate(-3deg);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-
-  100% {
-    transform: rotate(-3deg);
-  }
+.md-tabs {
+  width: 100%;
 }
 </style>
