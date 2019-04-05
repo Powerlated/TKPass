@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div id="hello">
     <img alt="R6S Logo" id="logo" src="../assets/r6_logo.png">
     <div class="text">
       <h1>TEAM KILL PASS TRACKER</h1>
@@ -36,38 +36,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+#hello {
+  position: relative;
+  text-shadow: -1px -1px 0 rgb(34, 34, 34), 1px -1px 0 rgb(34, 34, 34),
+    -1px 1px 0 rgb(34, 34, 34), 1px 1px 0 rgb(34, 34, 34);
 }
 
 .text {
-  min-width: 40%;
-  max-width: 800px;
+  max-width: 95%;
+  width: 800px;
+
   margin: 0 auto;
 
-  font-size: calc(10px + 2vmin);
+  font-size: calc(24px);
 }
 
 #logo {
   margin-top: 10px;
   animation: App-logo-spin infinite 0.02s linear,
     App-logo-fx infinite 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  max-width: 95%;
 
   pointer-events: none;
   filter: invert(100%) drop-shadow(1px 0px 0 red) drop-shadow(-1px 0px 0 red)
     drop-shadow(0px 1px 0 red) drop-shadow(0px -1px 0 red);
+
+  max-width: 90%;
+
+  word-break: normal;
 }
 
 @keyframes App-logo-spin {
@@ -85,9 +80,8 @@ a {
 }
 
 p {
-  width: 800px;
   text-align: left;
-  width: 100%;
+
   margin-bottom: 40px;
 }
 

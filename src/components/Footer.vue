@@ -1,9 +1,11 @@
 <template>
-  <div class="footer">
-    <p>
-      This website is completely unrelated and unaffiliated with Rainbow
-      Six, Ubisoft, or any of its properties and IP.
-    </p>
+  <div id="container">
+    <div class="footer">
+      <p>
+        This website is completely unrelated and unaffiliated with Rainbow
+        Six, Ubisoft, or any of its properties and IP.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -17,6 +19,10 @@ export default {
 </script>
 
 <style>
+#container {
+  padding-top: 50px;
+}
+
 .footer {
   box-sizing: border-box;
 
