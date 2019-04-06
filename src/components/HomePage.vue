@@ -1,5 +1,5 @@
 <template>
-  <div id="hello">
+  <div>
     <img alt="R6S Logo" id="logo" src="../assets/r6_logo.png">
     <div class="text">
       <h1>TEAM KILL PASS TRACKER</h1>
@@ -36,11 +36,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#hello {
-  position: relative;
-  text-shadow: -1px -1px 0 rgb(34, 34, 34), 1px -1px 0 rgb(34, 34, 34),
-    -1px 1px 0 rgb(34, 34, 34), 1px 1px 0 rgb(34, 34, 34);
-}
 
 .text {
   max-width: 95%;
@@ -48,7 +43,9 @@ export default {
 
   margin: 0 auto;
 
-  font-size: calc(24px);
+  font-size: calc(30px);
+  text-shadow: -1px -1px 0 rgb(34, 34, 34), 1px -1px 0 rgb(34, 34, 34),
+    -1px 1px 0 rgb(34, 34, 34), 1px 1px 0 rgb(34, 34, 34);
 }
 
 #logo {

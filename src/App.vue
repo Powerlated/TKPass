@@ -93,6 +93,10 @@ body {
 
 
 <style>
+.tab-content {
+  max-width: 100vw;
+}
+
 .nav-tabs {
   -webkit-tap-highlight-color: transparent;
   outline: none;
