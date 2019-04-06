@@ -7,7 +7,9 @@
       </b-tab>
       <b-tab title="Members"></b-tab>
       <b-tab title="Staff"></b-tab>
-      <b-tab title="Leaderboard"></b-tab>
+      <b-tab title="Leaderboard">
+        <Leaderboard/>
+      </b-tab>
       <b-tab title="Requests">
         <Requests/>
       </b-tab>
@@ -26,6 +28,7 @@ Vue.use(MdContent);
 Vue.use(MdTabs);
 
 import HomePage from "./components/pages/HomePage.vue";
+import Leaderboard from "./components/pages/Leaderboard.vue";
 import Requests from "./components/pages/Requests.vue";
 
 import Footer from "./components/Footer.vue";
@@ -43,6 +46,7 @@ export default {
   name: "app",
   components: {
     HomePage,
+    Leaderboard,
     Footer,
     Requests
   }
