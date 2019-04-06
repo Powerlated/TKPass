@@ -39,6 +39,16 @@ export default {
           rank: "2",
           username: "OstrichGOD.NBD",
           TKPasses: "42069"
+        },
+        {
+          rank: "32",
+          username: "wow_lag32",
+          TKPasses: "-7"
+        },
+        {
+          rank: "3",
+          username: "kambel_soup",
+          TKPasses: "95"
         }
       ]
     };
@@ -51,10 +61,9 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start;
-}
 
-#container {
+  align-items: flex-start;
+
   flex-basis: auto; /* default value */
   flex-grow: 1;
   flex: 2 1 auto;
@@ -63,7 +72,6 @@ export default {
 .table {
   /* color: rgba(0, 0, 0, 0.87); */
 
-  border-radius: 4px;
   margin: 40px;
   max-width: 800px;
 
