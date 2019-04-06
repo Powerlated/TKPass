@@ -49,7 +49,8 @@ export default {
           rank: "3",
           username: "kambel_soup",
           TKPasses: "95"
-        }
+        },
+        { rank: "∞", username: "Plaute_Optime", TKPasses: "∞" }
       ]
     };
   }
