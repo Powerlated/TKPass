@@ -25,8 +25,8 @@ Vue.use(MdButton);
 Vue.use(MdContent);
 Vue.use(MdTabs);
 
-import HomePage from "./components/HomePage.vue";
-import Requests from "./components/Requests.vue";
+import HomePage from "./components/pages/HomePage.vue";
+import Requests from "./components/pages/Requests.vue";
 
 import Footer from "./components/Footer.vue";
 

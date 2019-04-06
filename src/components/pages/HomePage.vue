@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img alt="R6S Logo" id="logo" src="../assets/r6_logo.png">
+    <img alt="R6S Logo" id="logo" src="../../assets/r6_logo.png">
     <div class="text">
       <h1>TEAM KILL PASS TRACKER</h1>
       <p>
@@ -36,7 +36,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .text {
   max-width: 95%;
   width: 800px;

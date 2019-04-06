@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import TKPassRequestForm from "./forms/TKPassRequest.vue";
-import SupportTicketForm from "./forms/SupportTicket.vue";
+import TKPassRequestForm from "../forms/TKPassRequest.vue";
+import SupportTicketForm from "../forms/SupportTicket.vue";
 export default { components: { TKPassRequestForm, SupportTicketForm } };
 </script>
 
