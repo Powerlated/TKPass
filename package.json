@@ -8,10 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.16",
     "core-js": "^2.6.5",
     "node-sass": "^4.11.0",
+    "restify-clients": "^2.6.4",
     "sass-loader": "^7.1.0",
     "vee-validate": "^2.2.0",
     "vue": "^2.6.10",
