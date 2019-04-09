@@ -16,7 +16,8 @@ export default { components: { TKPassRequestForm, SupportTicketForm } };
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start
+  align-items: flex-start;
+  flex: 1 1 auto;
 }
 
 #forms .v-card {
@@ -28,6 +29,7 @@ export default { components: { TKPassRequestForm, SupportTicketForm } };
 .v-messages__message {
   color: rgba(255, 0, 0, 0.938);
 }
+
 .v-card {
   /* color: rgba(0, 0, 0, 0.87); */
 
