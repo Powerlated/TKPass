@@ -100,7 +100,11 @@ export default {
       this.$validator.validateAll();
       // if (!this.errors.any()) {
       let ComponentClass = Vue.extend(FormSubmittedSnackBar);
-      new ComponentClass().$mount("#snackbar");
+
+      let snackbarDiv = document.createElement("div");
+      this.$el.appendChild(snackbarDiv);
+
+      new ComponentClass().$mount(snackbarDiv);
       console.log("Snackbar!");
       // }
     },
