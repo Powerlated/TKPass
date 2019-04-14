@@ -98,7 +98,8 @@ body {
 
 <style>
 .tab-content {
-  max-width: 100vw;
+  max-width: 95vw;
+  margin: 0 auto;
 }
 
 .nav-tabs {
@@ -111,6 +112,8 @@ body {
   padding: 0;
   background: rgb(6, 17, 31);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+  /* white-space: nowrap; */
 }
 
 .nav-item {

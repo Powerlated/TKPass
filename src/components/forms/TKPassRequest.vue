@@ -45,7 +45,6 @@
         <v-btn @click="clear">clear</v-btn>
       </form>
     </v-card>
-    <div id="snackbar"/>
   </div>
 </template>
 
@@ -58,8 +57,6 @@ import FormSubmittedSnackBar from "./_FormSubmittedSnackbar.vue";
 Vue.use(VeeValidate);
 
 export default {
-  components: { FormSubmittedSnackBar },
-
   $_veeValidate: {
     validator: "new"
   },
@@ -98,15 +95,14 @@ export default {
   methods: {
     submit() {
       this.$validator.validateAll();
-      // if (!this.errors.any()) {
-      let ComponentClass = Vue.extend(FormSubmittedSnackBar);
+      if (!this.errors.any()) {
+        let ComponentClass = Vue.extend(FormSubmittedSnackBar);
 
-      let snackbarDiv = document.createElement("div");
-      this.$el.appendChild(snackbarDiv);
+        let snackbarDiv = document.createElement("div");
+        this.$el.appendChild(snackbarDiv);
 
-      new ComponentClass().$mount(snackbarDiv);
-      console.log("Snackbar!");
-      // }
+        new ComponentClass().$mount(snackbarDiv);
+      }
     },
     clear() {
       this.username = "";
